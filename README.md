@@ -1,37 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TJSL PLN UID Banten
 
-## Getting Started
+Website informasi program Tanggung Jawab Sosial dan Lingkungan (TJSL) PT PLN (Persero) Unit Induk Distribusi Banten.
 
-First, run the development server:
+Dibangun menggunakan [Next.js](https://nextjs.org) (App Router) dengan TypeScript, Tailwind CSS, dan shadcn/ui.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Fitur
+
+### Halaman Publik
+- **Beranda** — Hero, statistik, tentang TJSL dengan 6 pilar, program per tahun (tab 2024–2026), kontak, dan unduh RKA.
+- **Program** — Daftar program CSR dengan pencarian, filter tahun & kategori, pagination, dan URL yang bisa di-bookmark.
+- **Detail Program** — Informasi lengkap setiap program (deskripsi, dampak, lokasi, anggaran, status, tags).
+
+### Panel Admin (`/admin`)
+- Login dengan password (JWT via httpOnly cookie, 24 jam).
+- Dashboard dengan ringkasan statistik dan breakdown status.
+- CRUD program: tambah, edit, lihat daftar, dan hapus program.
+- Form terintegrasi dengan validasi Zod + react-hook-form.
+
+### API
+- `GET /api/programs` — Query program (filter: tahun, kategori, status, kata kunci; pagination).
+- `POST /api/programs` — Tambah program baru.
+- `GET /api/programs/[id]` — Detail program.
+- `PUT /api/programs/[id]` — Update program.
+- `DELETE /api/programs/[id]` — Hapus program.
+- `POST /api/auth/login` — Login admin.
+- `POST /api/auth/logout` — Logout admin.
+
+## Tech Stack
+
+| Teknologi | Keterangan |
+|---|---|
+| Next.js 16 | App Router |
+| TypeScript | — |
+| Tailwind CSS v4 | Styling |
+| shadcn/ui | Komponen UI (Radix UI) |
+| JWT (jose) | Autentikasi admin |
+| react-hook-form + Zod | Form & validasi |
+| lucide-react | Ikon |
+| sonner | Notifikasi toast |
+| JSON file (`data/programs.json`) | Penyimpanan data |
+
+## Struktur Proyek
+
+```
+src/
+├── proxy.ts                  # Proteksi route admin (Next.js 16 middleware)
+├── types/index.ts            # Tipe data Program, dll.
+├── lib/
+│   ├── programs.ts           # CRUD program
+│   ├── auth.ts               # JWT session
+│   ├── constants.ts          # Label, warna, konfigurasi
+│   └── utils.ts              # Helper: format mata uang, tanggal, dll.
+├── components/
+│   ├── layout/               # Navbar, Footer
+│   ├── home/                 # Hero, Stats, About, ProgramsByYear, Contact, Download
+│   ├── programs/             # ProgramCard, ProgramFilter
+│   └── ui/                   # Komponen shadcn/ui
+└── app/
+    ├── page.tsx              # Beranda
+    ├── programs/             # Listing & detail program
+    ├── admin/                # Panel admin (dashboard, CRUD, login)
+    └── api/                  # REST API
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Memulai
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Install dependencies
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Jalankan development server
+npm run dev
+```
 
-## Learn More
+Buka [http://localhost:3000](http://localhost:3000).
 
-To learn more about Next.js, take a look at the following resources:
+### Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Buat `.env.local`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+ADMIN_PASSWORD=your-password
+ADMIN_SESSION_SECRET=your-jwt-secret-min-32-chars
+```
 
-## Deploy on Vercel
+## Catatan
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# tjsl.uidbanten
+- Data program disimpan di `data/programs.json` (membutuhkan filesystem persistent — tidak kompatibel dengan serverless read-only Vercel tanpa migrasi).
+- Semua UI dalam Bahasa Indonesia.
