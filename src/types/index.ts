@@ -20,6 +20,7 @@ export interface Program {
   budget: number;
   status: ProgramStatus;
   imageUrl: string;
+  images?: string[];
   impactDescription: string;
   tags: string[];
   createdAt: string;

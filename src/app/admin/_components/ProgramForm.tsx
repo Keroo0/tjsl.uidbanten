@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -13,6 +13,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { CATEGORY_LABELS, STATUS_LABELS, AVAILABLE_YEARS } from '@/lib/constants';
 import { toast } from 'sonner';
 import Image from 'next/image';
+import { Upload, Loader2 } from 'lucide-react';
 import type { Program } from '@/types';
 
 const schema = z.object({
@@ -25,7 +26,10 @@ const schema = z.object({
   beneficiariesCount: z.number().int().min(0),
   budget: z.number().min(0),
   status: z.enum(['planned', 'ongoing', 'completed']),
-  imageUrl: z.string().url('URL gambar tidak valid'),
+  imageUrl: z.string().min(1, 'Gambar wajib diisi').refine(
+    (v) => v.startsWith('/') || /^https?:\/\//.test(v),
+    'URL atau path gambar tidak valid'
+  ),
   impactDescription: z.string(),
   tags: z.string(),
 });
@@ -40,6 +44,8 @@ export default function ProgramForm({ program }: Props) {
   const router = useRouter();
   const isEdit = !!program;
   const [previewError, setPreviewError] = useState(false);
+  const [uploading, setUploading] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const {
     register,
@@ -58,6 +64,30 @@ export default function ProgramForm({ program }: Props) {
   });
 
   const imageUrl = watch('imageUrl');
+
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setUploading(true);
+    setPreviewError(false);
+
+    const form = new FormData();
+    form.append('file', file);
+
+    const res = await fetch('/api/upload', { method: 'POST', body: form });
+    const data = await res.json();
+
+    setUploading(false);
+    e.target.value = '';
+
+    if (res.ok) {
+      setValue('imageUrl', data.url, { shouldValidate: true });
+      toast.success('Gambar berhasil diunggah');
+    } else {
+      toast.error(data.error ?? 'Gagal mengunggah gambar');
+    }
+  };
 
   const onSubmit = async (values: FormValues) => {
     const payload = {
@@ -176,16 +206,46 @@ export default function ProgramForm({ program }: Props) {
         </div>
       </div>
 
-      {/* Image URL */}
+      {/* Image */}
       <div className="space-y-1.5">
-        <Label htmlFor="imageUrl">URL Gambar <span className="text-destructive">*</span></Label>
+        <Label htmlFor="imageUrl">Foto Program <span className="text-destructive">*</span></Label>
+
+        {/* Upload button */}
+        <div className="flex items-center gap-2">
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept="image/jpeg,image/png,image/webp"
+            className="hidden"
+            onChange={handleFileChange}
+          />
+          <Button
+            type="button"
+            variant="outline"
+            size="sm"
+            disabled={uploading}
+            onClick={() => fileInputRef.current?.click()}
+            className="cursor-pointer gap-1.5"
+          >
+            {uploading ? (
+              <><Loader2 className="h-3.5 w-3.5 animate-spin" />Mengunggah...</>
+            ) : (
+              <><Upload className="h-3.5 w-3.5" />Upload Foto</>
+            )}
+          </Button>
+          <span className="text-xs text-muted-foreground">JPG, PNG, WebP — maks. 5 MB</span>
+        </div>
+
+        {/* Manual URL input */}
         <Input
           id="imageUrl"
           {...register('imageUrl')}
-          placeholder="https://images.unsplash.com/..."
+          placeholder="Atau tempel URL gambar..."
           onChange={(e) => { register('imageUrl').onChange(e); setPreviewError(false); }}
         />
         {errors.imageUrl && <p className="text-xs text-destructive">{errors.imageUrl.message}</p>}
+
+        {/* Preview */}
         {imageUrl && !previewError && (
           <div className="relative mt-2 aspect-video w-full max-w-xs rounded-lg overflow-hidden border border-border bg-muted">
             <Image

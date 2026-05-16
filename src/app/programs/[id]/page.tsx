@@ -10,6 +10,7 @@ import { CATEGORY_LABELS, STATUS_LABELS, STATUS_COLORS, CATEGORY_COLORS } from '
 import { formatCurrency, formatDate, formatNumber } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { cn } from '@/lib/utils';
+import { ProgramGallery } from '@/components/programs/ProgramGallery';
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -86,6 +87,13 @@ export default async function ProgramDetailPage({ params }: Props) {
                 </div>
               </div>
             )}
+
+            <ProgramGallery
+              imageUrl={program.imageUrl}
+              images={program.images}
+              category={program.category}
+              title={program.title}
+            />
 
             {program.tags.length > 0 && (
               <div>

@@ -4,7 +4,9 @@
       "Bash(pip3 install *)",
       "Bash(curl -s \"http://localhost:3000/api/programs?year=2025\")",
       "Bash(python3 -c ' *)",
-      "Bash(curl -s \"http://localhost:3000/api/programs?category=pendidikan\")"
+      "Bash(curl -s \"http://localhost:3000/api/programs?category=pendidikan\")",
+      "Bash(convert --version)",
+      "Bash(python3 -c \"from PIL import Image; print\\('pillow ok'\\)\")"
     ]
   }
 }

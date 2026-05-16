@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Zap } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -9,14 +9,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="md:col-span-2 space-y-4">
-            <div className="flex items-center gap-2.5">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white">
-                <Zap className="h-4 w-4" strokeWidth={2.5} />
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="font-heading font-bold text-sm text-white">TJSL</span>
-                <span className="text-[10px] text-slate-400">PLN UID Banten</span>
-              </div>
+            <div className="flex items-center">
+              <Image
+                src="/logo/logo-pln-peduli.png"
+                alt="PLN Peduli"
+                width={120}
+                height={60}
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
               Program Tanggung Jawab Sosial dan Lingkungan PT PLN (Persero) Unit Induk Distribusi Banten
