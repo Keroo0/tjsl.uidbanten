@@ -21,15 +21,58 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
-  title: 'TJSL PLN UID Banten',
+  title: {
+    default: 'TJSL PLN UID Banten — Program CSR Berkelanjutan',
+    template: '%s | TJSL PLN UID Banten',
+  },
   description:
-    'Tanggung Jawab Sosial dan Lingkungan PLN Unit Induk Distribusi Banten — program CSR yang berdampak nyata bagi masyarakat Banten.',
-  keywords: ['TJSL', 'PLN', 'UID Banten', 'CSR', 'tanggung jawab sosial', 'lingkungan'],
+    'Program Tanggung Jawab Sosial dan Lingkungan (TJSL) PLN Unit Induk Distribusi Banten. Informasi lengkap kegiatan CSR, pemberdayaan masyarakat, dan program berkelanjutan PLN Peduli di wilayah Banten.',
+  keywords: [
+    'TJSL PLN',
+    'PLN UID Banten',
+    'CSR PLN',
+    'tanggung jawab sosial perusahaan',
+    'PLN Peduli',
+    'program CSR Banten',
+    'pemberdayaan masyarakat',
+    'CSR perusahaan listrik',
+    'lingkungan hidup',
+    'program sosial PLN',
+    'kemitraan PLN',
+    'bina lingkungan PLN',
+    'TJSL Banten',
+    'kegiatan CSR terbaru 2025',
+    'CSR Indonesia',
+  ],
+  icons: {
+    icon: '/logo/logo-pln-peduli.png',
+    apple: '/logo/logo-pln-peduli.png',
+  },
+  metadataBase: new URL('https://tjsl-pln-uidbanten.com'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: 'TJSL PLN UID Banten',
-    description: 'Program Tanggung Jawab Sosial dan Lingkungan PLN UID Banten',
+    title: 'TJSL PLN UID Banten — Program CSR Berkelanjutan',
+    description:
+      'Program Tanggung Jawab Sosial dan Lingkungan PLN UID Banten — pemberdayaan masyarakat, pelestarian lingkungan, dan kemitraan UMKM.',
+    url: 'https://tjsl-pln-uidbanten.com',
+    siteName: 'TJSL PLN UID Banten',
     locale: 'id_ID',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'TJSL PLN UID Banten',
+    description: 'Program Tanggung Jawab Sosial dan Lingkungan PLN UID Banten',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 
