@@ -13,7 +13,11 @@ const programSchema = z.object({
   beneficiariesCount: z.number().int().min(0),
   budget: z.number().min(0),
   status: z.enum(['planned', 'ongoing', 'completed']),
-  imageUrl: z.string().url(),
+  imageUrl: z.string().min(1).refine(
+    (v) => v.startsWith('/') || /^https?:\/\//.test(v),
+    'Path gambar tidak valid'
+  ),
+  images: z.array(z.string()).optional(),
   impactDescription: z.string(),
   tags: z.array(z.string()),
 });

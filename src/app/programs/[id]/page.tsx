@@ -91,7 +91,6 @@ export default async function ProgramDetailPage({ params }: Props) {
             <ProgramGallery
               imageUrl={program.imageUrl}
               images={program.images}
-              category={program.category}
               title={program.title}
             />
 

@@ -10,7 +10,12 @@
     "beneficiariesCount": 82,
     "budget": 192000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+    "imageUrl": "/2024/Desa Berdaya - Agrowisata Kopi/main.jpg",
+    "images": [
+      "/2024/Desa Berdaya - Agrowisata Kopi/dok-1.jpg",
+      "/2024/Desa Berdaya - Agrowisata Kopi/dok-2.jpg",
+      "/2024/Desa Berdaya - Agrowisata Kopi/dok-3.jpg"
+    ],
     "impactDescription": "Sebanyak 82 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 192 juta dari total alokasi. Keluaran program: Pelatihan Manajemen usaha wisata, pelatihan umkm, pelatihan barista dan roastery.",
     "tags": [
       "Ekonomi",
@@ -33,7 +38,7 @@
     "beneficiariesCount": 93,
     "budget": 495000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=800&q=80",
+    "imageUrl": "/2024/Desa Berdaya - Budidaya Ikan/main.jpg",
     "impactDescription": "Sebanyak 93 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 495 juta dari total alokasi. Keluaran program: kolam bioflok dan bibit.",
     "tags": [
       "Ekonomi",
@@ -42,7 +47,12 @@
       "Budidaya Ikan"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Desa Berdaya - Budidaya Ikan/dok-1.jpg",
+      "/2024/Desa Berdaya - Budidaya Ikan/dok-2.jpg",
+      "/2024/Desa Berdaya - Budidaya Ikan/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-003",
@@ -55,7 +65,7 @@
     "beneficiariesCount": 74,
     "budget": 290000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80",
+    "imageUrl": "/2024/Program Bambu Cetak Kreatif/main.jpg",
     "impactDescription": "Sebanyak 74 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 290 juta dari total alokasi. Keluaran program: Mesin potong kertas, mesin creasing, mesin sablon global, mesin pond, laptop, mesin produksi kerjaninan bambu, pelatihan kerajinan bambu, pelatihan sablon dan paperbag.",
     "tags": [
       "UMK",
@@ -64,7 +74,12 @@
       "Kerajinan Bambu"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Program Bambu Cetak Kreatif/dok-1.jpg",
+      "/2024/Program Bambu Cetak Kreatif/dok-2.jpg",
+      "/2024/Program Bambu Cetak Kreatif/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-004",
@@ -77,7 +92,7 @@
     "beneficiariesCount": 19,
     "budget": 200000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80",
+    "imageUrl": "/2024/Program Inklusi Ramah Berteknologi/main.jpg",
     "impactDescription": "Sebanyak 19 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 200 juta dari total alokasi. Keluaran program: Pelatihan desain grafis dan pelatihan komik strip, pembelian perlengkapan edukasi.",
     "tags": [
       "Pendidikan",
@@ -85,7 +100,12 @@
       "PLN UID Banten"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Program Inklusi Ramah Berteknologi/dok-1.jpg",
+      "/2024/Program Inklusi Ramah Berteknologi/dok-2.jpg",
+      "/2024/Program Inklusi Ramah Berteknologi/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-005",
@@ -98,7 +118,7 @@
     "beneficiariesCount": 155,
     "budget": 296000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80",
+    "imageUrl": "/2024/Program Generasi Bersinar/main.jpg",
     "impactDescription": "Sebanyak 155 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 296 juta dari total alokasi. Keluaran program: Sertifikasi pelatih voli dan sepakbola, Diklat Voli dan Sepakbola,Pembinaan Porprov voli dan piala suratin, perlengkapan latihan.",
     "tags": [
       "Pendidikan",
@@ -106,7 +126,12 @@
       "PLN UID Banten"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Program Generasi Bersinar/dok-1.jpg",
+      "/2024/Program Generasi Bersinar/dok-2.jpg",
+      "/2024/Program Generasi Bersinar/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-006",
@@ -119,7 +144,7 @@
     "beneficiariesCount": 272,
     "budget": 300000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80",
+    "imageUrl": "/2024/Pengelolaan HUB UMKM PLN/main.jpg",
     "impactDescription": "Sebanyak 272 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 300 juta dari total alokasi. Keluaran program: pelatihan Pemasaran, Packaging, Pelatihan foto produk, program inkubasi, public speaking.",
     "tags": [
       "UMK",
@@ -128,7 +153,12 @@
       "UMKM"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Pengelolaan HUB UMKM PLN/dok-1.jpg",
+      "/2024/Pengelolaan HUB UMKM PLN/dok-2.jpg",
+      "/2024/Pengelolaan HUB UMKM PLN/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-007",
@@ -141,7 +171,7 @@
     "beneficiariesCount": 168,
     "budget": 290000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+    "imageUrl": "/2024/Riset dan inovasi pemanfaatan baterai bekas kendaraan listrik/main.jpg",
     "impactDescription": "Sebanyak 168 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 290 juta dari total alokasi. Keluaran program: Inovasi pemanfaatan baterai bekas kendaraan listrik.",
     "tags": [
       "Pendidikan",
@@ -149,7 +179,12 @@
       "PLN UID Banten"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Riset dan inovasi pemanfaatan baterai bekas kendaraan listrik/dok-1.jpg",
+      "/2024/Riset dan inovasi pemanfaatan baterai bekas kendaraan listrik/dok-2.jpg",
+      "/2024/Riset dan inovasi pemanfaatan baterai bekas kendaraan listrik/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-008",
@@ -162,7 +197,7 @@
     "beneficiariesCount": 145,
     "budget": 213000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80",
+    "imageUrl": "/2024/Program Agrosejahtera/main.jpg",
     "impactDescription": "Sebanyak 145 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 213 juta dari total alokasi. Keluaran program: rumah bibit, mesin pertanian jagung, mesin dan peralatan UMKM olahan hasil pertanian, pelatihan produksi UMKM.",
     "tags": [
       "UMK",
@@ -170,7 +205,12 @@
       "PLN UID Banten"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Program Agrosejahtera/dok-1.jpg",
+      "/2024/Program Agrosejahtera/dok-2.jpg",
+      "/2024/Program Agrosejahtera/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-009",
@@ -183,7 +223,7 @@
     "beneficiariesCount": 61,
     "budget": 295000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1602525962574-3a3cd7f6c2ff?w=800&q=80",
+    "imageUrl": "/2024/Kampung Gula Semut/main.jpg",
     "impactDescription": "Sebanyak 61 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 295 juta dari total alokasi. Keluaran program: Mesin dan peralatan pengolah nira aren, pelatihan pembuatan gula semut, pelatihan pembibitan pohon aren.",
     "tags": [
       "UMK",
@@ -192,7 +232,12 @@
       "Gula Semut"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Kampung Gula Semut/dok-1.jpg",
+      "/2024/Kampung Gula Semut/dok-2.jpg",
+      "/2024/Kampung Gula Semut/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-010",
@@ -205,7 +250,7 @@
     "beneficiariesCount": 79,
     "budget": 297000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80",
+    "imageUrl": "/2024/Kawasan Batik/main.jpg",
     "impactDescription": "Sebanyak 79 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 297 juta dari total alokasi. Keluaran program: Mesin jahit, mesin batik, revitalisasi rumah pemasaran, pelatihan-pelatihan.",
     "tags": [
       "UMK",
@@ -214,7 +259,12 @@
       "Batik"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Kawasan Batik/dok-1.jpg",
+      "/2024/Kawasan Batik/dok-2.jpg",
+      "/2024/Kawasan Batik/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-011",
@@ -227,7 +277,7 @@
     "beneficiariesCount": 18,
     "budget": 283000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&q=80",
+    "imageUrl": "/2024/Program Nelayan Terang/main.jpg",
     "impactDescription": "Sebanyak 18 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 283 juta dari total alokasi. Keluaran program: Pembuatan bagan kerang hijau, bagan pancing, kandang bebek, mesin penetas telur bebek, indukan bebek, pelatihan budidaya bebek.",
     "tags": [
       "UMK",
@@ -236,7 +286,12 @@
       "Nelayan"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Program Nelayan Terang/dok-1.jpg",
+      "/2024/Program Nelayan Terang/dok-2.jpg",
+      "/2024/Program Nelayan Terang/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-012",
@@ -249,7 +304,7 @@
     "beneficiariesCount": 0,
     "budget": 155000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
+    "imageUrl": "/2024/Perhitungan Dampak SROI dan Social Mapping/main.jpeg",
     "impactDescription": "Realisasi anggaran sebesar Rp 155 juta dari total alokasi. Keluaran program: Hasil perhitungan SROI dan IKM.",
     "tags": [
       "SROI",
@@ -271,7 +326,7 @@
     "beneficiariesCount": 26,
     "budget": 386825000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80",
+    "imageUrl": "/2024/Program Pemberdayaan Masyarakat Adat dan Pemasangan Listrik Gratis/main.jpg",
     "impactDescription": "Sebanyak 26 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 387 juta dari total alokasi. Keluaran program: Pertanian labu kuning, pupuk, semprotan,mulsa,mesin mowe, mesin oven,mesin parut, alat kukus,packaging, kompor, revitalisasi rumah produksi.",
     "tags": [
       "UMK",
@@ -280,7 +335,12 @@
       "Elektrifikasi"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Program Pemberdayaan Masyarakat Adat dan Pemasangan Listrik Gratis/dok-1.jpg",
+      "/2024/Program Pemberdayaan Masyarakat Adat dan Pemasangan Listrik Gratis/dok-2.jpg",
+      "/2024/Program Pemberdayaan Masyarakat Adat dan Pemasangan Listrik Gratis/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-014",
@@ -293,7 +353,7 @@
     "beneficiariesCount": 2,
     "budget": 28150000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1534093607318-f025413f49cb?w=800&q=80",
+    "imageUrl": "/2024/Bantuan Kegiatan Partisipasi Pameran DhawaFest Pesona 2024/main.jpg",
     "impactDescription": "Sebanyak 2 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 28 juta dari total alokasi. Keluaran program: 1. Akomodasi hotel dan transportasi 2. Cetakan banner, goodie bag, dan kartu nama serta flyer produk.",
     "tags": [
       "UMK",
@@ -302,7 +362,12 @@
       "Pameran UMKM"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Bantuan Kegiatan Partisipasi Pameran DhawaFest Pesona 2024/dok-1.jpg",
+      "/2024/Bantuan Kegiatan Partisipasi Pameran DhawaFest Pesona 2024/dok-2.jpg",
+      "/2024/Bantuan Kegiatan Partisipasi Pameran DhawaFest Pesona 2024/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-015",
@@ -315,7 +380,7 @@
     "beneficiariesCount": 2,
     "budget": 25400000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+    "imageUrl": "/2024/Bantuan Kegiatan Partisipasi Bazar KESDM 2024 - HUB UMK Banten/main.jpg",
     "impactDescription": "Sebanyak 2 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 25 juta dari total alokasi. Keluaran program: 1. Akomodasi hotel dan transportasi 2. Cetakan banner, goodie bag, dan kartu nama serta flyer produk.",
     "tags": [
       "UMK",
@@ -323,7 +388,12 @@
       "PLN UID Banten"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Bantuan Kegiatan Partisipasi Bazar KESDM 2024 - HUB UMK Banten/dok-1.jpg",
+      "/2024/Bantuan Kegiatan Partisipasi Bazar KESDM 2024 - HUB UMK Banten/dok-2.jpg",
+      "/2024/Bantuan Kegiatan Partisipasi Bazar KESDM 2024 - HUB UMK Banten/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-016",
@@ -336,7 +406,7 @@
     "beneficiariesCount": 160,
     "budget": 100000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1621451537084-482c73073a0f?w=800&q=80",
+    "imageUrl": "/2024/Program Employee Green Involvement/main.jpg",
     "impactDescription": "Sebanyak 160 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 100 juta dari total alokasi. Keluaran program: Ton Sampah anorganik.",
     "tags": [
       "Lingkungan",
@@ -344,7 +414,12 @@
       "PLN UID Banten"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Program Employee Green Involvement/dok-1.jpg",
+      "/2024/Program Employee Green Involvement/dok-2.jpg",
+      "/2024/Program Employee Green Involvement/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-017",
@@ -357,7 +432,7 @@
     "beneficiariesCount": 52,
     "budget": 100000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=800&q=80",
+    "imageUrl": "/2024/Program Srikandi Movement Women Support Women Kampung Handycraft/main.jpg",
     "impactDescription": "Sebanyak 52 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 100 juta dari total alokasi. Keluaran program: 1. Mesin Potong 2. Mesin Gerinda 3. Mesin bor 4. Mesin Pond 5. Mesin Jahit 6. Mesin laminating 7. Bahan dan peralatan handycraft 8. 3 jenis pelatihan handycraft dan pelatihan digital marketing 9. Branding Program.",
     "tags": [
       "UMK",
@@ -366,7 +441,12 @@
       "Srikandi"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Program Srikandi Movement Women Support Women Kampung Handycraft/dok-1.jpg",
+      "/2024/Program Srikandi Movement Women Support Women Kampung Handycraft/dok-2.jpg",
+      "/2024/Program Srikandi Movement Women Support Women Kampung Handycraft/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-018",
@@ -379,7 +459,7 @@
     "beneficiariesCount": 2,
     "budget": 21900000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80",
+    "imageUrl": "/2024/Bantuan Kegiatan Partisipasi Bazar Inacraft 2024 - HUB UMK Banten/main.jpg",
     "impactDescription": "Sebanyak 2 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 22 juta dari total alokasi. Keluaran program: 1. Akomodasi hotel dan transportasi 2. Cetakan banner, goodie bag, dan kartu nama serta flyer produk.",
     "tags": [
       "UMK",
@@ -387,7 +467,12 @@
       "PLN UID Banten"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Bantuan Kegiatan Partisipasi Bazar Inacraft 2024 - HUB UMK Banten/dok-1.jpg",
+      "/2024/Bantuan Kegiatan Partisipasi Bazar Inacraft 2024 - HUB UMK Banten/dok-2.jpg",
+      "/2024/Bantuan Kegiatan Partisipasi Bazar Inacraft 2024 - HUB UMK Banten/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-019",
@@ -400,7 +485,7 @@
     "beneficiariesCount": 34,
     "budget": 200000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80",
+    "imageUrl": "/2024/Program Kesiapsiagaan Darurat Bencana 2024/main.jpg",
     "impactDescription": "Sebanyak 34 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 200 juta dari total alokasi. Keluaran program: 1. pelatihan dan sertifikasi pegawai 2. Set APD water rescue 3. water shoes 4. Throw rope 5. Ring Bouy 6. Tas Siaga Bencana 7. Tandu Lipat 8. Jas Hujan 9. Septu Boots 10. Masker 11. Head lamp 12. Lampu senter 13. Sarung Tangan.",
     "tags": [
       "Kebencanaan",
@@ -408,7 +493,12 @@
       "PLN UID Banten"
     ],
     "createdAt": "2024-01-15T08:00:00.000Z",
-    "updatedAt": "2024-12-31T10:00:00.000Z"
+    "updatedAt": "2024-12-31T10:00:00.000Z",
+    "images": [
+      "/2024/Program Kesiapsiagaan Darurat Bencana 2024/dok-1.jpg",
+      "/2024/Program Kesiapsiagaan Darurat Bencana 2024/dok-2.jpg",
+      "/2024/Program Kesiapsiagaan Darurat Bencana 2024/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-020",

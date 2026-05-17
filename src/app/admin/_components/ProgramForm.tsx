@@ -30,6 +30,7 @@ const schema = z.object({
     (v) => v.startsWith('/') || /^https?:\/\//.test(v),
     'URL atau path gambar tidak valid'
   ),
+  images: z.array(z.string()).optional(),
   impactDescription: z.string(),
   tags: z.string(),
 });
@@ -40,12 +41,26 @@ interface Props {
   program?: Program;
 }
 
+type UploadType = 'main' | 'dok-1' | 'dok-2' | 'dok-3';
+
+const UPLOAD_LABELS: Record<UploadType, string> = {
+  'main': 'Foto Utama',
+  'dok-1': 'Dokumentasi 1',
+  'dok-2': 'Dokumentasi 2',
+  'dok-3': 'Dokumentasi 3',
+};
+
 export default function ProgramForm({ program }: Props) {
   const router = useRouter();
   const isEdit = !!program;
-  const [previewError, setPreviewError] = useState(false);
-  const [uploading, setUploading] = useState(false);
-  const fileInputRef = useRef<HTMLInputElement>(null);
+  const [uploadingType, setUploadingType] = useState<UploadType | null>(null);
+  const [previewErrors, setPreviewErrors] = useState<Set<string>>(new Set());
+  const fileInputRefs = useRef<Record<UploadType, HTMLInputElement | null>>({
+    'main': null,
+    'dok-1': null,
+    'dok-2': null,
+    'dok-3': null,
+  });
 
   const {
     register,
@@ -60,33 +75,50 @@ export default function ProgramForm({ program }: Props) {
           ...program,
           tags: program.tags.join(', '),
         }
-      : { year: 2024, status: 'planned', beneficiariesCount: 0, budget: 0, tags: '', imageUrl: '' },
+      : { year: 2024, status: 'planned', beneficiariesCount: 0, budget: 0, tags: '', imageUrl: '', images: [] },
   });
 
   const imageUrl = watch('imageUrl');
+  const images = watch('images') ?? [];
+  const title = watch('title');
+  const year = watch('year');
 
-  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-
-    setUploading(true);
-    setPreviewError(false);
+  const handleUpload = async (type: UploadType, file: File) => {
+    setUploadingType(type);
+    setPreviewErrors((prev) => { const next = new Set(prev); next.delete(type); return next; });
 
     const form = new FormData();
     form.append('file', file);
+    form.append('year', String(year));
+    form.append('title', title);
+    form.append('type', type);
 
     const res = await fetch('/api/upload', { method: 'POST', body: form });
     const data = await res.json();
 
-    setUploading(false);
-    e.target.value = '';
+    setUploadingType(null);
 
     if (res.ok) {
-      setValue('imageUrl', data.url, { shouldValidate: true });
-      toast.success('Gambar berhasil diunggah');
+      if (type === 'main') {
+        setValue('imageUrl', data.url, { shouldValidate: true });
+      } else {
+        const idx = parseInt(type.split('-')[1]) - 1;
+        const current = watch('images') ?? [];
+        const next = [...current];
+        next[idx] = data.url;
+        setValue('images', next);
+      }
+      toast.success(`${UPLOAD_LABELS[type]} berhasil diunggah`);
     } else {
       toast.error(data.error ?? 'Gagal mengunggah gambar');
     }
+  };
+
+  const handleFileChange = (type: UploadType) => async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    e.target.value = '';
+    await handleUpload(type, file);
   };
 
   const onSubmit = async (values: FormValues) => {
@@ -113,13 +145,7 @@ export default function ProgramForm({ program }: Props) {
     }
   };
 
-  const field = (id: keyof FormValues, label: string, required = false) => (
-    <div className="space-y-1.5">
-      <Label htmlFor={id} className="text-sm font-medium">
-        {label}{required && <span className="text-destructive ml-1">*</span>}
-      </Label>
-    </div>
-  );
+  const uploadTypes: UploadType[] = ['main', 'dok-1', 'dok-2', 'dok-3'];
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
@@ -206,60 +232,59 @@ export default function ProgramForm({ program }: Props) {
         </div>
       </div>
 
-      {/* Image */}
-      <div className="space-y-1.5">
-        <Label htmlFor="imageUrl">Foto Program <span className="text-destructive">*</span></Label>
+      {/* Photos */}
+      <div className="space-y-4">
+        <Label>Foto Program <span className="text-destructive">*</span></Label>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {uploadTypes.map((type) => {
+            const src = type === 'main' ? imageUrl : images[parseInt(type.split('-')[1]) - 1];
+            const isUploading = uploadingType === type;
+            const hasError = previewErrors.has(type);
 
-        {/* Upload button */}
-        <div className="flex items-center gap-2">
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept="image/jpeg,image/png,image/webp"
-            className="hidden"
-            onChange={handleFileChange}
-          />
-          <Button
-            type="button"
-            variant="outline"
-            size="sm"
-            disabled={uploading}
-            onClick={() => fileInputRef.current?.click()}
-            className="cursor-pointer gap-1.5"
-          >
-            {uploading ? (
-              <><Loader2 className="h-3.5 w-3.5 animate-spin" />Mengunggah...</>
-            ) : (
-              <><Upload className="h-3.5 w-3.5" />Upload Foto</>
-            )}
-          </Button>
-          <span className="text-xs text-muted-foreground">JPG, PNG, WebP — maks. 5 MB</span>
+            return (
+              <div key={type} className="space-y-1.5">
+                <Label className="text-xs font-medium text-muted-foreground">{UPLOAD_LABELS[type]}</Label>
+                <input
+                  ref={(el) => { fileInputRefs.current[type] = el; }}
+                  type="file"
+                  accept="image/jpeg,image/png,image/webp"
+                  className="hidden"
+                  onChange={handleFileChange(type)}
+                />
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="sm"
+                  disabled={isUploading}
+                  onClick={() => fileInputRefs.current[type]?.click()}
+                  className="cursor-pointer gap-1.5 w-full"
+                >
+                  {isUploading ? (
+                    <><Loader2 className="h-3.5 w-3.5 animate-spin" />Mengunggah...</>
+                  ) : (
+                    <><Upload className="h-3.5 w-3.5" />{src ? 'Ganti' : 'Upload'}</>
+                  )}
+                </Button>
+                {src && !hasError ? (
+                  <div className="relative aspect-video w-full rounded-lg overflow-hidden border border-border bg-muted">
+                    <Image
+                      src={src}
+                      alt={UPLOAD_LABELS[type]}
+                      fill
+                      className="object-cover"
+                      onError={() => setPreviewErrors((prev) => { const next = new Set(prev); next.add(type); return next; })}
+                      unoptimized
+                      sizes="(max-width: 768px) 100vw, 25vw"
+                    />
+                  </div>
+                ) : hasError ? (
+                  <p className="text-xs text-muted-foreground">Tidak dapat memuat preview.</p>
+                ) : null}
+              </div>
+            );
+          })}
         </div>
-
-        {/* Manual URL input */}
-        <Input
-          id="imageUrl"
-          {...register('imageUrl')}
-          placeholder="Atau tempel URL gambar..."
-          onChange={(e) => { register('imageUrl').onChange(e); setPreviewError(false); }}
-        />
         {errors.imageUrl && <p className="text-xs text-destructive">{errors.imageUrl.message}</p>}
-
-        {/* Preview */}
-        {imageUrl && !previewError && (
-          <div className="relative mt-2 aspect-video w-full max-w-xs rounded-lg overflow-hidden border border-border bg-muted">
-            <Image
-              src={imageUrl}
-              alt="Preview"
-              fill
-              className="object-cover"
-              onError={() => setPreviewError(true)}
-              unoptimized
-              sizes="320px"
-            />
-          </div>
-        )}
-        {previewError && <p className="text-xs text-muted-foreground">Tidak dapat memuat preview gambar.</p>}
       </div>
 
       {/* Impact */}

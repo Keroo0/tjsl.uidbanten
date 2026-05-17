@@ -12,7 +12,11 @@ const updateSchema = z.object({
   beneficiariesCount: z.number().int().min(0).optional(),
   budget: z.number().min(0).optional(),
   status: z.enum(['planned', 'ongoing', 'completed']).optional(),
-  imageUrl: z.string().url().optional(),
+  imageUrl: z.string().min(1).refine(
+    (v) => v.startsWith('/') || /^https?:\/\//.test(v),
+    'Path gambar tidak valid'
+  ).optional(),
+  images: z.array(z.string()).optional(),
   impactDescription: z.string().optional(),
   tags: z.array(z.string()).optional(),
 });

@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { writeFile, mkdir } from 'fs/promises';
 import { join } from 'path';
-import { randomUUID } from 'crypto';
 import { verifySessionToken } from '@/lib/auth';
 
 const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
@@ -35,14 +34,22 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Ukuran file terlalu besar. Maksimal 5MB.' }, { status: 400 });
   }
 
+  const year = formData.get('year') as string;
+  const title = formData.get('title') as string;
+  const type = formData.get('type') as string; // 'main' | 'dok-1' | 'dok-2' | 'dok-3'
+
+  if (!year || !title || !type) {
+    return NextResponse.json({ error: 'Parameter year, title, dan type wajib diisi' }, { status: 400 });
+  }
+
   const ext = file.name.split('.').pop()?.toLowerCase() ?? 'jpg';
-  const filename = `${randomUUID()}.${ext}`;
-  const uploadsDir = join(process.cwd(), 'public', 'uploads');
+  const folderName = title.replace(/[<>:"/\\|?*]/g, '').trim();
+  const filename = `${type}.${ext}`;
+  const uploadDir = join(process.cwd(), 'public', year, folderName);
 
-  await mkdir(uploadsDir, { recursive: true });
-
+  await mkdir(uploadDir, { recursive: true });
   const buffer = Buffer.from(await file.arrayBuffer());
-  await writeFile(join(uploadsDir, filename), buffer);
+  await writeFile(join(uploadDir, filename), buffer);
 
-  return NextResponse.json({ url: `/uploads/${filename}` });
+  return NextResponse.json({ url: `/${year}/${folderName}/${filename}` });
 }
