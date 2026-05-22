@@ -563,7 +563,7 @@
     "beneficiariesCount": 0,
     "budget": 300000000,
     "status": "planned",
-    "imageUrl": "https://images.unsplash.com/photo-1547489432-cf93fa6c71ee?w=800&q=80",
+    "imageUrl": "/2025/Program Siaga Bencana 2025/main.jpg",
     "impactDescription": "",
     "tags": [
       "Kebencanaan",
@@ -584,7 +584,7 @@
     "beneficiariesCount": 20,
     "budget": 90000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1593113616828-6f22bca04804?w=800&q=80",
+    "imageUrl": "/2025/Perhitungan Dampak SROI dan IKM/main.jpg",
     "impactDescription": "Sebanyak 20 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 90 juta dari total alokasi. Keluaran program: Penilaian SROI dan IKM.",
     "tags": [
       "SROI",
@@ -630,7 +630,7 @@
     "beneficiariesCount": 200,
     "budget": 100000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
+    "imageUrl": "/2025/Program Srikandi Movement 2025 - Srikandi Goes to Campus/main.jpg",
     "impactDescription": "Sebanyak 200 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 100 juta dari total alokasi. Keluaran program: Seminar serta Pelatihan UMKM.",
     "tags": [
       "Pendidikan",
@@ -639,7 +639,12 @@
       "Srikandi"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Program Srikandi Movement 2025 - Srikandi Goes to Campus/dok-1.jpg",
+      "/2025/Program Srikandi Movement 2025 - Srikandi Goes to Campus/dok-2.jpg",
+      "/2025/Program Srikandi Movement 2025 - Srikandi Goes to Campus/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-026",
@@ -707,7 +712,7 @@
     "beneficiariesCount": 1400,
     "budget": 48000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
+    "imageUrl": "/2025/Program Pencegahan Stunting di Kampung Bahari/main.jpg",
     "impactDescription": "Sebanyak 1,400 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 48 juta dari total alokasi. Keluaran program: Bantuan Program Pencegahan Stunting.",
     "tags": [
       "Sosial",
@@ -716,7 +721,10 @@
       "Stunting"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Program Pencegahan Stunting di Kampung Bahari/dok-.jpg"
+    ]
   },
   {
     "id": "prog-029",
@@ -755,7 +763,7 @@
     "beneficiariesCount": 10,
     "budget": 19150000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&q=80",
+    "imageUrl": "/2025/Program Pameran INACRAFT 2025 - HUB UMK Banten/main.jpg",
     "impactDescription": "Sebanyak 10 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 19 juta dari total alokasi. Keluaran program: Bantuan dana untuk pameran.",
     "tags": [
       "UMK",
@@ -764,7 +772,12 @@
       "Pameran UMKM"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Program Pameran INACRAFT 2025 - HUB UMK Banten/dok-1.jpg",
+      "/2025/Program Pameran INACRAFT 2025 - HUB UMK Banten/dok-2.jpg",
+      "/2025/Program Pameran INACRAFT 2025 - HUB UMK Banten/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-031",
@@ -777,7 +790,7 @@
     "beneficiariesCount": 26,
     "budget": 399840000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80",
+    "imageUrl": "/2025/Bantuan Motor Roda Tiga - Penanggulangan Sampah/main.jpg",
     "impactDescription": "Sebanyak 26 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 400 juta dari total alokasi. Keluaran program: Bantuan Kendaraan Pengangkut Sampah.",
     "tags": [
       "Lingkungan",
@@ -786,7 +799,12 @@
       "Pengelolaan Sampah"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Bantuan Motor Roda Tiga - Penanggulangan Sampah/dok-1.jpg",
+      "/2025/Bantuan Motor Roda Tiga - Penanggulangan Sampah/dok-2.jpg",
+      "/2025/Bantuan Motor Roda Tiga - Penanggulangan Sampah/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-032",
@@ -799,7 +817,7 @@
     "beneficiariesCount": 226,
     "budget": 50000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1534093607318-f025413f49cb?w=800&q=80",
+    "imageUrl": "/2025/Program Srikandi Movement 2025 - Inspiring Srikandi/main.jpg",
     "impactDescription": "Sebanyak 226 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 50 juta dari total alokasi. Keluaran program: jegiatan isnpiring srikandi di UID Banten.",
     "tags": [
       "Sosial",
@@ -808,7 +826,12 @@
       "Srikandi"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Program Srikandi Movement 2025 - Inspiring Srikandi/dok-1.jpg",
+      "/2025/Program Srikandi Movement 2025 - Inspiring Srikandi/dok-2.jpg",
+      "/2025/Program Srikandi Movement 2025 - Inspiring Srikandi/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-033",
@@ -821,7 +844,7 @@
     "beneficiariesCount": 2000,
     "budget": 150000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
+    "imageUrl": "/2025/Pasar Sembako Murah - Program Terang Berkah Ramadhan/main.jpg",
     "impactDescription": "Sebanyak 2,000 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 150 juta dari total alokasi. Keluaran program: Paket sembako berupa Beras, minyak, dan gula.",
     "tags": [
       "Sosial",
@@ -829,7 +852,12 @@
       "PLN UID Banten"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Pasar Sembako Murah - Program Terang Berkah Ramadhan/dok-1.jpg",
+      "/2025/Pasar Sembako Murah - Program Terang Berkah Ramadhan/dok-2.jpg",
+      "/2025/Pasar Sembako Murah - Program Terang Berkah Ramadhan/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-034",
@@ -842,7 +870,7 @@
     "beneficiariesCount": 2624,
     "budget": 185190000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&q=80",
+    "imageUrl": "/2025/Program Bantuan Listrik Lapas Tangerang/main.jpg",
     "impactDescription": "Sebanyak 2,624 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 185 juta dari total alokasi. Keluaran program: Bantuan Pasang Baru.",
     "tags": [
       "Lingkungan",
@@ -850,7 +878,11 @@
       "PLN UID Banten"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Program Bantuan Listrik Lapas Tangerang/dok-1.jpg",
+      "/2025/Program Bantuan Listrik Lapas Tangerang/dok-2.jpg"
+    ]
   },
   {
     "id": "prog-035",
@@ -863,7 +895,7 @@
     "beneficiariesCount": 20,
     "budget": 65000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+    "imageUrl": "/2025/Pembuatan Sosial Mapping/main.jpg",
     "impactDescription": "Sebanyak 20 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 65 juta dari total alokasi. Keluaran program: Pembuatan Sosial Mapping.",
     "tags": [
       "Pemberdayaan Ekonomi",
@@ -883,7 +915,7 @@
     "beneficiariesCount": 1380,
     "budget": 1489521975,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80",
+    "imageUrl": "/2025/Program Sambung Listrik Gratis Dalam Rangka HLN ke-80/main.jpg",
     "impactDescription": "Sebanyak 1,380 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 1.49 miliar dari total alokasi. Keluaran program: Bantuan Pemasangan Listrik Gratis HLN 80.",
     "tags": [
       "Ekonomi",
@@ -892,7 +924,11 @@
       "Elektrifikasi"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Program Sambung Listrik Gratis Dalam Rangka HLN ke-80/dok-1.jpg",
+      "/2025/Program Sambung Listrik Gratis Dalam Rangka HLN ke-80/dok-2.jpg"
+    ]
   },
   {
     "id": "prog-037",
@@ -905,7 +941,7 @@
     "beneficiariesCount": 1020,
     "budget": 73630199,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1621451537084-482c73073a0f?w=800&q=80",
+    "imageUrl": "/2025/Program Perbaikan Sarana dan Prasarana Ibadah Masjid Raudhatul Jannah/main.jpg",
     "impactDescription": "Sebanyak 1,020 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 74 juta dari total alokasi. Keluaran program: Bantuan Biaya Renvasi Masjid.",
     "tags": [
       "Lingkungan",
@@ -913,7 +949,12 @@
       "PLN UID Banten"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Program Perbaikan Sarana dan Prasarana Ibadah Masjid Raudhatul Jannah/dok-1.jpg",
+      "/2025/Program Perbaikan Sarana dan Prasarana Ibadah Masjid Raudhatul Jannah/dok-2.jpg",
+      "/2025/Program Perbaikan Sarana dan Prasarana Ibadah Masjid Raudhatul Jannah/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-038",
@@ -926,7 +967,7 @@
     "beneficiariesCount": 40,
     "budget": 385000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=800&q=80",
+    "imageUrl": "/2025/Budidaya Udang Gemilang/main.jpg",
     "impactDescription": "Sebanyak 40 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 385 juta dari total alokasi. Keluaran program: Program Budidaya Udang Gemilang menerapkan konsep Electrifying Marine untuk meningkatkan produktivitas dan keberlanjutan budidaya udang. Teknologi berbasis listrik digunakan dalam berbagai aspek, seperti kincir air otomatis untuk menjaga kadar oksigen dalam tambak, sistem monitoring kualitas air berbasis IoT, serta pompa dan aerator bertenaga listrik untuk meningkatkan efisiensi pemeliharaan..",
     "tags": [
       "UMK",
@@ -934,7 +975,11 @@
       "PLN UID Banten"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Budidaya Udang Gemilang/dok-1.jpg",
+      "/2025/Budidaya Udang Gemilang/dok-2.jpg"
+    ]
   },
   {
     "id": "prog-039",
@@ -947,7 +992,7 @@
     "beneficiariesCount": 500,
     "budget": 350000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
+    "imageUrl": "/2025/Program Hari Menanam Pohon 2025/main.jpg",
     "impactDescription": "Sebanyak 500 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 350 juta dari total alokasi. Keluaran program: Kegiatan Penanaman Pohon serentak 2025.",
     "tags": [
       "Lingkungan",
@@ -956,7 +1001,11 @@
       "Penghijauan"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Program Hari Menanam Pohon 2025/dok-1.jpg",
+      "/2025/Program Hari Menanam Pohon 2025/dok-2.jpg"
+    ]
   },
   {
     "id": "prog-040",
@@ -969,7 +1018,7 @@
     "beneficiariesCount": 126,
     "budget": 7425231,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80",
+    "imageUrl": "/2025/Program Pembinaan dan Pendampingan Mitra PUMK/main.jpg",
     "impactDescription": "Sebanyak 126 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 7 juta dari total alokasi. Keluaran program: Bantuan program Pembinaan dan pendapingan PUMK.",
     "tags": [
       "UMK",
@@ -977,7 +1026,12 @@
       "PLN UID Banten"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Program Pembinaan dan Pendampingan Mitra PUMK/dok-1.jpg",
+      "/2025/Program Pembinaan dan Pendampingan Mitra PUMK/dok-2.jpg",
+      "/2025/Program Pembinaan dan Pendampingan Mitra PUMK/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-041",
@@ -990,7 +1044,7 @@
     "beneficiariesCount": 29888,
     "budget": 200000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
+    "imageUrl": "/2025/Program Desa Siaga Bencana 2025/main.jpg",
     "impactDescription": "Sebanyak 29,888 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 200 juta dari total alokasi. Keluaran program: Bantuan untuk pembentukan Desa Siaga Bencana.",
     "tags": [
       "Kebencanaan",
@@ -998,7 +1052,12 @@
       "PLN UID Banten"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Program Desa Siaga Bencana 2025/dok-1.jpg",
+      "/2025/Program Desa Siaga Bencana 2025/dok-2.jpg",
+      "/2025/Program Desa Siaga Bencana 2025/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-042",
@@ -1011,7 +1070,7 @@
     "beneficiariesCount": 40,
     "budget": 450000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80",
+    "imageUrl": "/2025/Badak Hitam Integrated and Smart Farming/main.jpg",
     "impactDescription": "Sebanyak 40 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 450 juta dari total alokasi. Keluaran program: Bantuan untuk pengambangan Integrated Farming.",
     "tags": [
       "UMK",
@@ -1019,7 +1078,12 @@
       "PLN UID Banten"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Badak Hitam Integrated and Smart Farming/dok-1.jpg",
+      "/2025/Badak Hitam Integrated and Smart Farming/dok-2.jpg",
+      "/2025/Badak Hitam Integrated and Smart Farming/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-043",
@@ -1032,7 +1096,7 @@
     "beneficiariesCount": 2000,
     "budget": 150000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80",
+    "imageUrl": "/2025/Bantuan Hewan Qurban/main.jpg",
     "impactDescription": "Sebanyak 2,000 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 150 juta dari total alokasi. Keluaran program: Penyediaan Sapi 5 Qurban.",
     "tags": [
       "Sosial",
@@ -1041,7 +1105,11 @@
       "Qurban"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Bantuan Hewan Qurban/dok-1.jpg",
+      "/2025/Bantuan Hewan Qurban/dok-2.jpg"
+    ]
   },
   {
     "id": "prog-044",
@@ -1054,7 +1122,7 @@
     "beneficiariesCount": 474,
     "budget": 125000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80",
+    "imageUrl": "/2025/Program Employee Voluntering Zero Waste Warrior Tahun 2025/main.jpg",
     "impactDescription": "Sebanyak 474 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 125 juta dari total alokasi.",
     "tags": [
       "Lingkungan",
@@ -1062,7 +1130,12 @@
       "PLN UID Banten"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Program Employee Voluntering Zero Waste Warrior Tahun 2025/dok-1.jpg",
+      "/2025/Program Employee Voluntering Zero Waste Warrior Tahun 2025/dok-2.jpg",
+      "/2025/Program Employee Voluntering Zero Waste Warrior Tahun 2025/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-045",
@@ -1075,7 +1148,7 @@
     "beneficiariesCount": 526,
     "budget": 150000000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80",
+    "imageUrl": "/2025/Rehabilitasi Asrama Santri Pondok Pesantren Fathul Ma'ani/main.jpg",
     "impactDescription": "Sebanyak 526 penerima manfaat telah mendapatkan dampak langsung dari program ini. Realisasi anggaran sebesar Rp 150 juta dari total alokasi. Keluaran program: Kegiatan Renovasi Bangunan Pondok Pesantren.",
     "tags": [
       "Pendidikan",
@@ -1084,7 +1157,12 @@
       "Pesantren"
     ],
     "createdAt": "2025-01-01T08:00:00.000Z",
-    "updatedAt": "2025-12-31T10:00:00.000Z"
+    "updatedAt": "2025-12-31T10:00:00.000Z",
+    "images": [
+      "/2025/Rehabilitasi Asrama Santri Pondok Pesantren Fathul Ma'ani/dok-1.jpg",
+      "/2025/Rehabilitasi Asrama Santri Pondok Pesantren Fathul Ma'ani/dok-2.jpg",
+      "/2025/Rehabilitasi Asrama Santri Pondok Pesantren Fathul Ma'ani/dok-3.jpg"
+    ]
   },
   {
     "id": "prog-046",

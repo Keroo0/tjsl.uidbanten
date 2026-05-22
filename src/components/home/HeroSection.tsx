@@ -10,8 +10,8 @@ export default function HeroSection() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1600&q=80"
-          alt="PLN infrastruktur listrik Banten"
+          src="/mainImage/halamanAwal.jpg"
+          alt="PLN UID Banten"
           fill
           className="object-cover"
           priority

@@ -51,8 +51,8 @@ export default function AboutSection() {
           <FadeIn direction="right" delay={100} className="order-1 lg:order-2 relative">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl shadow-black/10">
               <Image
-                src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&q=80"
-                alt="Kegiatan sosial TJSL PLN UID Banten"
+                src="/2025/Desa Berdaya Agrowisata Kopi/main.jpg"
+                alt="Kegiatan TJSL PLN UID Banten"
                 fill
                 className="object-cover transition-transform duration-700 hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 50vw"
