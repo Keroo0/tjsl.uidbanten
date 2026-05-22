@@ -10,7 +10,6 @@ const updateSchema = z.object({
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
   location: z.string().min(2).optional(),
   beneficiariesCount: z.number().int().min(0).optional(),
-  budget: z.number().min(0).optional(),
   status: z.enum(['planned', 'ongoing', 'completed']).optional(),
   imageUrl: z.string().min(1).refine(
     (v) => v.startsWith('/') || /^https?:\/\//.test(v),

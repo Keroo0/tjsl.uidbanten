@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { MapPin, Calendar, Users } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { CATEGORY_LABELS, STATUS_LABELS, STATUS_COLORS, CATEGORY_COLORS } from '@/lib/constants';
-import { formatBudget, formatDate, formatNumber } from '@/lib/utils';
+import { formatDate, formatNumber } from '@/lib/utils';
 import type { ProgramSummary, Program } from '@/types';
 import { cn } from '@/lib/utils';
 
@@ -41,7 +41,7 @@ export default function ProgramCard({ program }: Props) {
         <div className="flex items-center gap-1.5 mb-2">
           <span className="text-xs font-semibold text-primary">{program.year}</span>
           <span className="text-border">·</span>
-          <span className="text-xs text-muted-foreground font-medium">{formatBudget(program.budget)}</span>
+          <span className="text-xs text-muted-foreground font-medium">{CATEGORY_LABELS[program.category]}</span>
         </div>
 
         <h3 className="font-heading font-semibold text-foreground leading-snug mb-3 line-clamp-2 group-hover:text-primary transition-colors">

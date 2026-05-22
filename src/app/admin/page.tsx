@@ -1,7 +1,7 @@
 import { getSiteStats, getAllPrograms } from '@/lib/programs';
 import { CATEGORY_LABELS, STATUS_LABELS } from '@/lib/constants';
-import { formatBudget, formatNumber } from '@/lib/utils';
-import { Folder, Users, Banknote, CheckCircle2, Clock, CalendarClock } from 'lucide-react';
+import { formatNumber } from '@/lib/utils';
+import { Folder, Users, CheckCircle2, Clock, CalendarClock } from 'lucide-react';
 import Link from 'next/link';
 import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -31,11 +31,10 @@ export default async function AdminDashboard() {
       </div>
 
       {/* Stat cards */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-3 gap-4">
         {[
           { icon: Folder, label: 'Total Program', value: formatNumber(stats.totalPrograms), color: 'text-primary', bg: 'bg-primary/8' },
           { icon: Users, label: 'Penerima Manfaat', value: formatNumber(stats.totalBeneficiaries), color: 'text-accent', bg: 'bg-accent/8' },
-          { icon: Banknote, label: 'Total Anggaran', value: formatBudget(stats.totalBudgetIDR), color: 'text-primary', bg: 'bg-primary/8' },
           { icon: CheckCircle2, label: 'Program Selesai', value: formatNumber(statusCounts.completed), color: 'text-accent', bg: 'bg-accent/8' },
         ].map(({ icon: Icon, label, value, color, bg }) => (
           <div key={label} className="rounded-xl border border-border/60 bg-white p-4">
@@ -51,7 +50,7 @@ export default async function AdminDashboard() {
       {/* Status breakdown */}
       <div className="rounded-xl border border-border/60 bg-white p-5">
         <h2 className="font-heading font-semibold text-foreground mb-4">Status Program</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
             { icon: CheckCircle2, label: STATUS_LABELS.completed, count: statusCounts.completed, color: 'text-green-600', bg: 'bg-green-50' },
             { icon: Clock, label: STATUS_LABELS.ongoing, count: statusCounts.ongoing, color: 'text-blue-600', bg: 'bg-blue-50' },

@@ -1,11 +1,10 @@
-import { Users, Folder, Banknote, Calendar } from 'lucide-react';
-import { formatBudget, formatNumber } from '@/lib/utils';
+import { Users, Folder, Calendar } from 'lucide-react';
+import { formatNumber } from '@/lib/utils';
 import { FadeIn } from '@/components/ui/fade-in';
 
 interface StatsSectionProps {
   totalPrograms: number;
   totalBeneficiaries: number;
-  totalBudgetIDR: number;
   activeYears: number[];
 }
 
@@ -25,14 +24,6 @@ const stats = (props: StatsSectionProps) => [
     desc: 'Jiwa terbantu',
     color: 'text-accent',
     bg: 'bg-accent/8',
-  },
-  {
-    icon: Banknote,
-    label: 'Total Anggaran',
-    value: formatBudget(props.totalBudgetIDR),
-    desc: 'Dana CSR tersalurkan',
-    color: 'text-primary',
-    bg: 'bg-primary/8',
   },
   {
     icon: Calendar,

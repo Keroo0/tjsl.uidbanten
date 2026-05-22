@@ -94,8 +94,8 @@ export async function queryPrograms(
   const start = (page - 1) * pageSize;
   const sliced = programs.slice(start, start + pageSize);
 
-  const data: ProgramSummary[] = sliced.map(({ id, title, year, category, date, location, status, imageUrl, tags, budget, beneficiariesCount }) => ({
-    id, title, year, category, date, location, status, imageUrl, tags, budget, beneficiariesCount,
+  const data: ProgramSummary[] = sliced.map(({ id, title, year, category, date, location, status, imageUrl, tags, beneficiariesCount }) => ({
+    id, title, year, category, date, location, status, imageUrl, tags, beneficiariesCount,
   }));
 
   return { data, total, page, pageSize, totalPages };
@@ -104,7 +104,6 @@ export async function queryPrograms(
 export async function getSiteStats() {
   const programs = await readPrograms();
   const totalBeneficiaries = programs.reduce((sum, p) => sum + p.beneficiariesCount, 0);
-  const totalBudgetIDR = programs.reduce((sum, p) => sum + p.budget, 0);
   const activeYears = [...new Set(programs.map((p) => p.year))].sort();
 
   const categoryCounts = programs.reduce(
@@ -118,7 +117,6 @@ export async function getSiteStats() {
   return {
     totalPrograms: programs.length,
     totalBeneficiaries,
-    totalBudgetIDR,
     activeYears,
     categoryCounts,
   };

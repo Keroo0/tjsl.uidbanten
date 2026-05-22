@@ -22,7 +22,6 @@ export default async function HomePage() {
       <StatsSection
         totalPrograms={stats.totalPrograms}
         totalBeneficiaries={stats.totalBeneficiaries}
-        totalBudgetIDR={stats.totalBudgetIDR}
         activeYears={stats.activeYears}
       />
       <AboutSection />

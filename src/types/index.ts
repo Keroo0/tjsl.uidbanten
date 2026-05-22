@@ -17,7 +17,6 @@ export interface Program {
   date: string;
   location: string;
   beneficiariesCount: number;
-  budget: number;
   status: ProgramStatus;
   imageUrl: string;
   images?: string[];
@@ -38,7 +37,6 @@ export type ProgramSummary = Pick<
   | 'status'
   | 'imageUrl'
   | 'tags'
-  | 'budget'
   | 'beneficiariesCount'
 >;
 
@@ -62,7 +60,6 @@ export interface ProgramFilters {
 export interface SiteStats {
   totalPrograms: number;
   totalBeneficiaries: number;
-  totalBudgetIDR: number;
   activeYears: number[];
   categoryCounts: Record<ProgramCategory, number>;
 }

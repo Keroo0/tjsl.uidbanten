@@ -2,12 +2,12 @@ import { notFound } from 'next/navigation';
 import { getProgramById } from '@/lib/programs';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, MapPin, Calendar, Users, Banknote, Tag } from 'lucide-react';
+import { ArrowLeft, MapPin, Calendar, Users, Tag } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { buttonVariants } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { CATEGORY_LABELS, STATUS_LABELS, STATUS_COLORS, CATEGORY_COLORS } from '@/lib/constants';
-import { formatCurrency, formatDate, formatNumber } from '@/lib/utils';
+import { formatDate, formatNumber } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { cn } from '@/lib/utils';
 import { ProgramGallery } from '@/components/programs/ProgramGallery';
@@ -142,15 +142,6 @@ export default async function ProgramDetailPage({ params }: Props) {
                   <div>
                     <p className="text-xs text-muted-foreground">Penerima Manfaat</p>
                     <p className="text-sm font-medium text-foreground">{formatNumber(program.beneficiariesCount)} jiwa</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent/10">
-                    <Banknote className="h-4 w-4 text-accent" strokeWidth={1.75} />
-                  </div>
-                  <div>
-                    <p className="text-xs text-muted-foreground">Anggaran</p>
-                    <p className="text-sm font-medium text-foreground">{formatCurrency(program.budget)}</p>
                   </div>
                 </div>
               </div>

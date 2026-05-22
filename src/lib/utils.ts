@@ -5,22 +5,6 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export function formatBudget(amount: number): string {
-  if (amount >= 1_000_000_000) {
-    const val = amount / 1_000_000_000;
-    return `Rp ${val % 1 === 0 ? val.toFixed(0) : val.toFixed(1)} Miliar`;
-  }
-  if (amount >= 1_000_000) {
-    const val = amount / 1_000_000;
-    return `Rp ${val % 1 === 0 ? val.toFixed(0) : val.toFixed(1)} Juta`;
-  }
-  return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(amount);
-}
-
-export function formatCurrency(amount: number): string {
-  return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(amount);
-}
-
 export function formatNumber(num: number): string {
   return new Intl.NumberFormat('id-ID').format(num);
 }

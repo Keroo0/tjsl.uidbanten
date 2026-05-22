@@ -24,7 +24,6 @@ const schema = z.object({
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Format: YYYY-MM-DD'),
   location: z.string().min(2, 'Minimal 2 karakter'),
   beneficiariesCount: z.number().int().min(0),
-  budget: z.number().min(0),
   status: z.enum(['planned', 'ongoing', 'completed']),
   imageUrl: z.string().min(1, 'Gambar wajib diisi').refine(
     (v) => v.startsWith('/') || /^https?:\/\//.test(v),
@@ -75,7 +74,7 @@ export default function ProgramForm({ program }: Props) {
           ...program,
           tags: program.tags.join(', '),
         }
-      : { year: 2024, status: 'planned', beneficiariesCount: 0, budget: 0, tags: '', imageUrl: '', images: [] },
+      : { year: 2024, status: 'planned', beneficiariesCount: 0, tags: '', imageUrl: '', images: [] },
   });
 
   const imageUrl = watch('imageUrl');
@@ -218,18 +217,11 @@ export default function ProgramForm({ program }: Props) {
         </div>
       </div>
 
-      {/* Row: Beneficiaries + Budget */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div className="space-y-1.5">
-          <Label htmlFor="beneficiariesCount">Jumlah Penerima Manfaat</Label>
-          <Input id="beneficiariesCount" type="number" min={0} {...register('beneficiariesCount', { valueAsNumber: true })} />
-          {errors.beneficiariesCount && <p className="text-xs text-destructive">{errors.beneficiariesCount.message}</p>}
-        </div>
-        <div className="space-y-1.5">
-          <Label htmlFor="budget">Anggaran (Rupiah)</Label>
-          <Input id="budget" type="number" min={0} {...register('budget', { valueAsNumber: true })} placeholder="Contoh: 500000000" />
-          {errors.budget && <p className="text-xs text-destructive">{errors.budget.message}</p>}
-        </div>
+      {/* Beneficiaries */}
+      <div className="space-y-1.5">
+        <Label htmlFor="beneficiariesCount">Jumlah Penerima Manfaat</Label>
+        <Input id="beneficiariesCount" type="number" min={0} {...register('beneficiariesCount', { valueAsNumber: true })} />
+        {errors.beneficiariesCount && <p className="text-xs text-destructive">{errors.beneficiariesCount.message}</p>}
       </div>
 
       {/* Photos */}

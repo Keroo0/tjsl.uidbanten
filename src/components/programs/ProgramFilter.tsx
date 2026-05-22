@@ -43,7 +43,7 @@ export default function ProgramFilter({ currentYear, currentCategory, currentSea
   };
 
   return (
-    <div className="flex flex-col sm:flex-row gap-3 flex-wrap">
+    <div className="flex flex-col sm:flex-row gap-3">
       {/* Search */}
       <form onSubmit={handleSearch} className="flex gap-2 flex-1 min-w-[200px]">
         <div className="relative flex-1">
@@ -65,7 +65,7 @@ export default function ProgramFilter({ currentYear, currentCategory, currentSea
         value={currentYear ?? 'all'}
         onValueChange={(v) => updateFilter('year', v === 'all' ? undefined : v)}
       >
-        <SelectTrigger className="w-[140px] bg-white cursor-pointer">
+        <SelectTrigger className="w-full sm:w-[140px] bg-white cursor-pointer">
           <SelectValue placeholder="Semua Tahun" />
         </SelectTrigger>
         <SelectContent>
@@ -81,7 +81,7 @@ export default function ProgramFilter({ currentYear, currentCategory, currentSea
         value={currentCategory ?? 'all'}
         onValueChange={(v) => updateFilter('category', v === 'all' ? undefined : v)}
       >
-        <SelectTrigger className="w-[190px] bg-white cursor-pointer">
+        <SelectTrigger className="w-full sm:w-[190px] bg-white cursor-pointer">
           <SelectValue placeholder="Semua Kategori" />
         </SelectTrigger>
         <SelectContent>

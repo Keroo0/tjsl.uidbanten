@@ -39,7 +39,7 @@ export default function DownloadSection() {
               <a
                 href={`/downloads/${filename}`}
                 download={filename}
-                className={cn(buttonVariants({ variant: 'outline', size: 'sm' }), 'w-full border-border/60 hover:bg-accent hover:text-white hover:border-accent transition-colors cursor-pointer')}
+                className={cn(buttonVariants({ variant: 'outline' }), 'w-full border-border/60 hover:bg-accent hover:text-white hover:border-accent transition-colors cursor-pointer')}
               >
                 <Download className="mr-2 h-3.5 w-3.5" strokeWidth={2} />
                 Unduh Excel

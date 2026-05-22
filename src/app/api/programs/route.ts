@@ -11,7 +11,6 @@ const programSchema = z.object({
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   location: z.string().min(2),
   beneficiariesCount: z.number().int().min(0),
-  budget: z.number().min(0),
   status: z.enum(['planned', 'ongoing', 'completed']),
   imageUrl: z.string().min(1).refine(
     (v) => v.startsWith('/') || /^https?:\/\//.test(v),

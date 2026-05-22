@@ -49,7 +49,7 @@ export default function ProgramsByYearSection({ programsByYear }: Props) {
 
         {/* Tab bar + Download button */}
         <FadeIn delay={100} className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8">
-          <div className="flex gap-1 p-1 bg-muted rounded-xl w-fit">
+          <div className="flex gap-1 p-1 bg-muted rounded-xl w-fit overflow-x-auto max-sm:flex-1">
             {years.map((year) => (
               <button
                 key={year}
