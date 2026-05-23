@@ -1129,7 +1129,12 @@
     "location": "Kota Tangerang, Banten",
     "beneficiariesCount": 2000,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80",
+    "imageUrl": "/2026/Program Darurat Bencana 2026/main.jpg",
+    "images": [
+      "/2026/Program Darurat Bencana 2026/dok-1.jpg",
+      "/2026/Program Darurat Bencana 2026/dok-2.jpg",
+      "/2026/Program Darurat Bencana 2026/dok-3.jpg"
+    ],
     "impactDescription": "Sebanyak 2,000 penerima manfaat telah mendapatkan dampak langsung dari program ini. Keluaran program: Bantuan Sembako untuk Warga Terdampak Banjir",
     "tags": [
       "Kebencanaan",
@@ -1149,7 +1154,12 @@
     "location": "Kota Tangerang, Banten",
     "beneficiariesCount": 2420,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80",
+    "imageUrl": "/2026/Program Terang Berkah Ramadan/main.jpg",
+    "images": [
+      "/2026/Program Terang Berkah Ramadan/dok-1.jpg",
+      "/2026/Program Terang Berkah Ramadan/dok-2.jpg",
+      "/2026/Program Terang Berkah Ramadan/dok-3.jpg"
+    ],
     "impactDescription": "Sebanyak 2,420 penerima manfaat telah mendapatkan dampak langsung dari program ini. Keluaran program: Bantuan Berupa Sembako",
     "tags": [
       "Sosial",
@@ -1170,7 +1180,7 @@
     "location": "Kota Tangerang, Banten",
     "beneficiariesCount": 0,
     "status": "planned",
-    "imageUrl": "https://images.unsplash.com/photo-1547489432-cf93fa6c71ee?w=800&q=80",
+    "imageUrl": "/2026/Pengukuran SROI dan IKM/main.jpg",
     "impactDescription": "",
     "tags": [
       "SROI",
@@ -1210,7 +1220,13 @@
     "location": "Kota Cilegon, Banten",
     "beneficiariesCount": 160,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1534093607318-f025413f49cb?w=800&q=80",
+    "imageUrl": "/2026/BANTEN INKLUSIFA PRENEUR Pemberdayaan, Kemandirian, dan Kesetaraan Gender bagi Kelompok Rentan dan Disabilitas Berbasis Produk Khas Banten/main.jpg",
+    "images": [
+      "/2026/BANTEN INKLUSIFA PRENEUR Pemberdayaan, Kemandirian, dan Kesetaraan Gender bagi Kelompok Rentan dan Disabilitas Berbasis Produk Khas Banten/dok-1.jpg",
+      "/2026/BANTEN INKLUSIFA PRENEUR Pemberdayaan, Kemandirian, dan Kesetaraan Gender bagi Kelompok Rentan dan Disabilitas Berbasis Produk Khas Banten/dok-2.jpg",
+      "/2026/BANTEN INKLUSIFA PRENEUR Pemberdayaan, Kemandirian, dan Kesetaraan Gender bagi Kelompok Rentan dan Disabilitas Berbasis Produk Khas Banten/dok-3.jpg",
+      "/2026/BANTEN INKLUSIFA PRENEUR Pemberdayaan, Kemandirian, dan Kesetaraan Gender bagi Kelompok Rentan dan Disabilitas Berbasis Produk Khas Banten/dok-4.jpg"
+    ],
     "impactDescription": "Sebanyak 160 penerima manfaat telah mendapatkan dampak langsung dari program ini. Keluaran program: Bantuan dana untuk program Pengembangan kaum disabilitas melalui pelatihan dan sertifikasi menuju kemandirian bagi para pesertanya",
     "tags": [
       "UMK",
@@ -1251,7 +1267,12 @@
     "location": "Kota Serang, Banten",
     "beneficiariesCount": 360,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
+    "imageUrl": "/2026/BRIDGE BANTEN Banten Renewable Island Development for Global Education SD Pulo Panjang/main.jpg",
+    "images": [
+      "/2026/BRIDGE BANTEN Banten Renewable Island Development for Global Education SD Pulo Panjang/dok-1.jpg",
+      "/2026/BRIDGE BANTEN Banten Renewable Island Development for Global Education SD Pulo Panjang/dok-2.jpg",
+      "/2026/BRIDGE BANTEN Banten Renewable Island Development for Global Education SD Pulo Panjang/dok-3.jpg"
+    ],
     "impactDescription": "Sebanyak 360 penerima manfaat telah mendapatkan dampak langsung dari program ini. Keluaran program: Program Kegiatan Untuk Renovasi SD Pulo Panjang dan pemberian alat olahraga, sound system dan pendukung pembelajaran",
     "tags": [
       "Pendidikan",
@@ -1271,7 +1292,12 @@
     "location": "Kab. Tangerang, Banten",
     "beneficiariesCount": 400,
     "status": "completed",
-    "imageUrl": "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&q=80",
+    "imageUrl": "/2026/PLN VocaGreen TechnoPreneur Sekolah Vokasi Mandiri Berbasis Green Innovation & Ketahanan Pangan/main.jpg",
+    "images": [
+      "/2026/PLN VocaGreen TechnoPreneur Sekolah Vokasi Mandiri Berbasis Green Innovation & Ketahanan Pangan/dok-1.jpg",
+      "/2026/PLN VocaGreen TechnoPreneur Sekolah Vokasi Mandiri Berbasis Green Innovation & Ketahanan Pangan/dok-2.jpg",
+      "/2026/PLN VocaGreen TechnoPreneur Sekolah Vokasi Mandiri Berbasis Green Innovation & Ketahanan Pangan/dok-3.jpg"
+    ],
     "impactDescription": "Sebanyak 400 penerima manfaat telah mendapatkan dampak langsung dari program ini. Keluaran program: Bantuan Program untuk pelaksanaan Kegiatan PLN VocaGreen Technopreneur",
     "tags": [
       "UMK",
@@ -1292,7 +1318,16 @@
     "location": "Kota Tangerang, Banten",
     "beneficiariesCount": 50,
     "status": "ongoing",
-    "imageUrl": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80",
+    "imageUrl": "/2026/HUB UMKM PLN UID Banten/main.jpg",
+    "images": [
+      "/2026/HUB UMKM PLN UID Banten/dok-1.jpg",
+      "/2026/HUB UMKM PLN UID Banten/dok-2.jpg",
+      "/2026/HUB UMKM PLN UID Banten/dok-3.jpg",
+      "/2026/HUB UMKM PLN UID Banten/dok-4.jpg",
+      "/2026/HUB UMKM PLN UID Banten/dok-5.jpg",
+      "/2026/HUB UMKM PLN UID Banten/dok-6.jpg",
+      "/2026/HUB UMKM PLN UID Banten/dok-7.jpg"
+    ],
     "impactDescription": "",
     "tags": [
       "UMK",
@@ -1334,7 +1369,12 @@
     "location": "Kota Tangerang, Banten",
     "beneficiariesCount": 110,
     "status": "ongoing",
-    "imageUrl": "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&q=80",
+    "imageUrl": "/2026/Insipring Srikandi/main.jpg",
+    "images": [
+      "/2026/Insipring Srikandi/dok-1.jpg",
+      "/2026/Insipring Srikandi/dok-2.jpg",
+      "/2026/Insipring Srikandi/dok-3.jpg"
+    ],
     "impactDescription": "",
     "tags": [
       "Sosial",

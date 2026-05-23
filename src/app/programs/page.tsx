@@ -4,7 +4,7 @@ import ProgramFilter from '@/components/programs/ProgramFilter';
 import { FadeIn } from '@/components/ui/fade-in';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from '@/components/ui/pagination';
 import type { ProgramCategory, ProgramStatus } from '@/types';
-import { AVAILABLE_YEARS, CATEGORY_LABELS } from '@/lib/constants';
+import { CATEGORY_LABELS } from '@/lib/constants';
 import { Search } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';

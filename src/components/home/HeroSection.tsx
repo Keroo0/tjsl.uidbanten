@@ -10,7 +10,7 @@ export default function HeroSection() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/mainImage/halamanAwal.jpg"
+          src="/mainImage/hero.jpg"
           alt="PLN UID Banten"
           fill
           className="object-cover"
@@ -58,7 +58,7 @@ export default function HeroSection() {
           <div
             data-hero-item
             style={{ '--hero-delay': '300ms' } as React.CSSProperties}
-            className="flex flex-col sm:flex-row gap-3"
+            className="flex flex-col sm:flex-row gap-3 items-start"
           >
             <Link href="/programs" className={cn(buttonVariants({ size: 'lg' }), 'bg-primary hover:bg-primary/90 text-white shadow-lg shadow-primary/30 font-semibold group cursor-pointer')}>
               Lihat Program

@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { MapPin, Calendar, Users } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
 import { CATEGORY_LABELS, STATUS_LABELS, STATUS_COLORS, CATEGORY_COLORS } from '@/lib/constants';
 import { formatDate, formatNumber } from '@/lib/utils';
 import type { ProgramSummary, Program } from '@/types';

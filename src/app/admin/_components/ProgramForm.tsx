@@ -102,6 +102,7 @@ export default function ProgramForm({ program }: Props) {
         setValue('imageUrl', data.url, { shouldValidate: true });
       } else {
         const idx = parseInt(type.split('-')[1]) - 1;
+        // eslint-disable-next-line react-hooks/incompatible-library
         const current = watch('images') ?? [];
         const next = [...current];
         next[idx] = data.url;

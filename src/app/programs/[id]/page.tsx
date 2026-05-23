@@ -3,7 +3,6 @@ import { getProgramById } from '@/lib/programs';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft, MapPin, Calendar, Users, Tag } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
 import { buttonVariants } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { CATEGORY_LABELS, STATUS_LABELS, STATUS_COLORS, CATEGORY_COLORS } from '@/lib/constants';
@@ -11,6 +10,10 @@ import { formatDate, formatNumber } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { cn } from '@/lib/utils';
 import { ProgramGallery } from '@/components/programs/ProgramGallery';
+import ShareButton from '@/components/programs/ShareButton';
+import PrintButton from '@/components/programs/PrintButton';
+import ReadingProgress from '@/components/ui/ReadingProgress';
+import ParallaxHero from '@/components/ui/ParallaxHero';
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -33,16 +36,19 @@ export default async function ProgramDetailPage({ params }: Props) {
 
   return (
     <div className="min-h-dvh bg-background">
+      <ReadingProgress />
       {/* Hero image */}
-      <div className="relative h-72 sm:h-96 overflow-hidden bg-muted">
-        <Image
-          src={program.imageUrl}
-          alt={program.title}
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
+      <div className="relative w-full h-[40dvh] sm:h-[50dvh] lg:h-[55dvh] overflow-hidden bg-muted">
+        <ParallaxHero>
+          <Image
+            src={program.imageUrl}
+            alt={program.title}
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+        </ParallaxHero>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/80 via-[#0F172A]/20 to-transparent" />
         <div className="absolute bottom-6 left-4 sm:left-8">
           <div className="flex gap-2 mb-3">
@@ -145,6 +151,13 @@ export default async function ProgramDetailPage({ params }: Props) {
                   </div>
                 </div>
               </div>
+              <Separator />
+              <ShareButton
+                title={program.title}
+                description={program.description.slice(0, 160)}
+                url={`https://tjsl-pln-uidbanten.com/programs/${program.id}`}
+              />
+              <PrintButton />
             </div>
           </div>
         </div>

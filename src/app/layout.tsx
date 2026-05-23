@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 import { Outfit, Jost } from 'next/font/google';
 import './globals.css';
+import { ThemeProvider } from 'next-themes';
 import { Toaster } from '@/components/ui/sonner';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import BackToTop from '@/components/ui/BackToTop';
 import { headers } from 'next/headers';
 
 const outfit = Outfit({
@@ -89,12 +91,16 @@ export default async function RootLayout({
     <html
       lang="id"
       className={`${outfit.variable} ${jost.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-dvh flex flex-col bg-background text-foreground">
-        {!isAdmin && <Navbar />}
-        <main className={`flex-1 ${!isAdmin ? '' : ''}`}>{children}</main>
-        {!isAdmin && <Footer />}
-        <Toaster />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          {!isAdmin && <Navbar />}
+          <main className={`flex-1 ${!isAdmin ? '' : ''}`}>{children}</main>
+          {!isAdmin && <Footer />}
+          {!isAdmin && <BackToTop />}
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -17,7 +17,7 @@ interface Props {
 export default function ProgramFilter({ currentYear, currentCategory, currentSearch }: Props) {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const [isPending, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
 
   const updateFilter = (key: string, value: string | null | undefined) => {
     const params = new URLSearchParams(searchParams.toString());

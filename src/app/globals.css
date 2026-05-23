@@ -156,3 +156,9 @@
     scroll-behavior: smooth;
   }
 }
+
+@media print {
+  nav, footer, .no-print, iframe, .sticky { display: none !important; }
+  body { background: white !important; color: black !important; }
+  @page { margin: 2cm; }
+}

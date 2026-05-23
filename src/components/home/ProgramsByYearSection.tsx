@@ -7,6 +7,7 @@ import ProgramCard from '@/components/programs/ProgramCard';
 import { AVAILABLE_YEARS, EXCEL_DOWNLOADS } from '@/lib/constants';
 import { buttonVariants } from '@/components/ui/button';
 import { FadeIn } from '@/components/ui/fade-in';
+import ScaleIn from '@/components/ui/ScaleIn';
 import { cn } from '@/lib/utils';
 import type { Program } from '@/types';
 
@@ -86,16 +87,9 @@ export default function ProgramsByYearSection({ programsByYear }: Props) {
           <>
             <div key={cardKey} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {programs.map((p, i) => (
-                <div
-                  key={p.id}
-                  style={{
-                    opacity: 0,
-                    transform: 'translateY(20px)',
-                    animation: `hero-fade-up 0.55s cubic-bezier(0.16,1,0.3,1) ${i * 70}ms both`,
-                  }}
-                >
+                <ScaleIn key={p.id} delay={i * 70}>
                   <ProgramCard program={p} />
-                </div>
+                </ScaleIn>
               ))}
             </div>
 

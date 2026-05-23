@@ -58,11 +58,7 @@ export default function AboutSection() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-            {/* Floating badge — responsive position */}
-            <div className="absolute -bottom-4 left-4 sm:-left-4 bg-white rounded-xl shadow-lg shadow-black/10 p-4 border border-border/60">
-              <div className="font-heading text-2xl font-bold text-primary">2024</div>
-              <div className="text-xs text-muted-foreground font-medium">Mulai Program</div>
-            </div>
+
           </FadeIn>
         </div>
       </div>
