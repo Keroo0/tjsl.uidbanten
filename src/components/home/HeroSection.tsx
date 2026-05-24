@@ -6,18 +6,18 @@ import { cn } from '@/lib/utils';
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[90dvh] flex items-center overflow-hidden">
+    <section className="relative min-h-[70dvh] sm:min-h-[80dvh] lg:min-h-[90dvh] flex items-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/mainImage/hero.jpg"
           alt="PLN UID Banten"
           fill
-          className="object-cover"
+          className="object-cover object-[55%_center] sm:object-center"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/92 via-[#0F172A]/75 to-[#0F172A]/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0F172A]/85 via-[#0F172A]/70 to-[#0F172A]/40 sm:bg-gradient-to-r sm:from-[#0F172A]/92 sm:via-[#0F172A]/75 sm:to-[#0F172A]/30" />
       </div>
 
       {/* Content — left aligned */}

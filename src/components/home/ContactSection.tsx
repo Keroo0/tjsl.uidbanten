@@ -13,8 +13,8 @@ const contacts = [
   {
     icon: Phone,
     label: 'Telepon',
-    value: '(021) 5572-1234',
-    href: 'tel:+62215572 1234',
+    value: '(021) 5526716',
+    href: 'tel:+62215526716',
     color: 'text-accent',
     bg: 'bg-accent/8',
   },

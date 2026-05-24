@@ -27,7 +27,7 @@ export default function ParallaxHero({ children, speed = 0.35 }: Props) {
   }, [speed]);
 
   return (
-    <div ref={ref} className="will-change-transform">
+    <div ref={ref} className="absolute inset-0 will-change-transform">
       {children}
     </div>
   );
