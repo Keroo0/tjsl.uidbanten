@@ -62,11 +62,20 @@ export const metadata: Metadata = {
     siteName: 'TJSL PLN UID Banten',
     locale: 'id_ID',
     type: 'website',
+    images: [
+      {
+        url: '/logo/logo-pln-peduli.png',
+        width: 512,
+        height: 512,
+        alt: 'Logo PLN Peduli',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'TJSL PLN UID Banten',
     description: 'Program Tanggung Jawab Sosial dan Lingkungan PLN UID Banten',
+    images: ['/logo/logo-pln-peduli.png'],
   },
   robots: {
     index: true,
