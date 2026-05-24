@@ -540,7 +540,7 @@
     "date": "2025-01-15",
     "location": "Banten",
     "beneficiariesCount": 0,
-    "status": "planned",
+    "status": "completed",
     "imageUrl": "/2025/Program Siaga Bencana 2025/main.jpg",
     "impactDescription": "",
     "tags": [
@@ -1128,7 +1128,7 @@
     "date": "2026-01-26",
     "location": "Kota Tangerang, Banten",
     "beneficiariesCount": 2000,
-    "status": "completed",
+    "status": "ongoing",
     "imageUrl": "/2026/Program Darurat Bencana 2026/main.jpg",
     "images": [
       "/2026/Program Darurat Bencana 2026/dok-1.jpg",
@@ -1153,7 +1153,7 @@
     "date": "2026-02-24",
     "location": "Kota Tangerang, Banten",
     "beneficiariesCount": 2420,
-    "status": "completed",
+    "status": "ongoing",
     "imageUrl": "/2026/Program Terang Berkah Ramadan/main.jpg",
     "images": [
       "/2026/Program Terang Berkah Ramadan/dok-1.jpg",
@@ -1179,7 +1179,7 @@
     "date": "2026-05-15",
     "location": "Kota Tangerang, Banten",
     "beneficiariesCount": 0,
-    "status": "planned",
+    "status": "ongoing",
     "imageUrl": "/2026/Pengukuran SROI dan IKM/main.jpg",
     "impactDescription": "",
     "tags": [
@@ -1192,14 +1192,14 @@
   },
   {
     "id": "prog-049",
-    "title": "SAKOLA BANTEN Sustainable Access for KnOwledge and Learning Advancement Banten - MIS Mathla’ul anwar Lebak",
-    "description": "Program SAKOLA BANTEN Sustainable Access for KnOwledge and Learning Advancement Banten - MIS Mathla’ul anwar Lebak merupakan program pendidikan dan peningkatan kapasitas sumber daya manusia PLN UID Banten bekerja sama dengan RELAWAN KAMPUNG INDONESIA di Kota Serang, Banten. program renovasi Sekolah MIS Mathla\"ul Anwar - Desa Citepuseun, Kecamatan Cihara, Kabupaten Lebak Banten",
+    "title": "SAKOLA BANTEN Sustainable Access for KnOwledge and Learning Advancement Banten - MIS Mathla\u2019ul anwar Lebak",
+    "description": "Program SAKOLA BANTEN Sustainable Access for KnOwledge and Learning Advancement Banten - MIS Mathla\u2019ul anwar Lebak merupakan program pendidikan dan peningkatan kapasitas sumber daya manusia PLN UID Banten bekerja sama dengan RELAWAN KAMPUNG INDONESIA di Kota Serang, Banten. program renovasi Sekolah MIS Mathla\"ul Anwar - Desa Citepuseun, Kecamatan Cihara, Kabupaten Lebak Banten",
     "year": 2026,
     "category": "pendidikan",
     "date": "2025-12-19",
     "location": "Kota Serang, Banten",
     "beneficiariesCount": 80,
-    "status": "completed",
+    "status": "ongoing",
     "imageUrl": "/2026/SAKOLA BANTEN Sustainable Access for KnOwledge and Learning Advancement Banten - MIS Mathla’ul anwar Lebak/main.jpg",
     "images": [
       "/2026/SAKOLA BANTEN Sustainable Access for KnOwledge and Learning Advancement Banten - MIS Mathla’ul anwar Lebak/dok-1.jpg",
@@ -1224,7 +1224,7 @@
     "date": "2026-01-15",
     "location": "Kota Cilegon, Banten",
     "beneficiariesCount": 160,
-    "status": "completed",
+    "status": "ongoing",
     "imageUrl": "/2026/BANTEN INKLUSIFA PRENEUR Pemberdayaan, Kemandirian, dan Kesetaraan Gender bagi Kelompok Rentan dan Disabilitas Berbasis Produk Khas Banten/main.jpg",
     "images": [
       "/2026/BANTEN INKLUSIFA PRENEUR Pemberdayaan, Kemandirian, dan Kesetaraan Gender bagi Kelompok Rentan dan Disabilitas Berbasis Produk Khas Banten/dok-1.jpg",
@@ -1276,7 +1276,7 @@
     "date": "2025-12-07",
     "location": "Kota Serang, Banten",
     "beneficiariesCount": 360,
-    "status": "completed",
+    "status": "ongoing",
     "imageUrl": "/2026/BRIDGE BANTEN Banten Renewable Island Development for Global Education SD Pulo Panjang/main.jpg",
     "images": [
       "/2026/BRIDGE BANTEN Banten Renewable Island Development for Global Education SD Pulo Panjang/dok-1.jpg",
@@ -1301,7 +1301,7 @@
     "date": "2025-12-11",
     "location": "Kab. Tangerang, Banten",
     "beneficiariesCount": 400,
-    "status": "completed",
+    "status": "ongoing",
     "imageUrl": "/2026/PLN VocaGreen TechnoPreneur Sekolah Vokasi Mandiri Berbasis Green Innovation & Ketahanan Pangan/main.jpg",
     "images": [
       "/2026/PLN VocaGreen TechnoPreneur Sekolah Vokasi Mandiri Berbasis Green Innovation & Ketahanan Pangan/dok-1.jpg",

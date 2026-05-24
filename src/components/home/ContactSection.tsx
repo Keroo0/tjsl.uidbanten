@@ -21,8 +21,8 @@ const contacts = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'tjsl@pln-uidbanten.co.id',
-    href: 'mailto:tjsl@pln-uidbanten.co.id',
+    value: 'tjsluidbanten@gmail.com',
+    href: 'mailto:tjsluidbanten@gmail.com',
     color: 'text-primary',
     bg: 'bg-primary/8',
   },
