@@ -85,7 +85,7 @@ export default function ProgramsByYearSection({ programsByYear }: Props) {
         {/* Program grid — re-keyed on year change to retrigger stagger */}
         {programs.length > 0 ? (
           <>
-            <div key={cardKey} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div key={cardKey} className="grid grid-cols-2 gap-6">
               {programs.map((p, i) => (
                 <ScaleIn key={p.id} delay={i * 70}>
                   <ProgramCard program={p} />
